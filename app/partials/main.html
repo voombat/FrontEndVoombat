@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title">Всё что надо</h3>                                    
+                                </div><!-- /.box-header -->
+                                <div class="box-body table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Улица</th>
+                                                <th>Дом</th>
+                                                <th>Номер квартиры</th>
+                                                <th>Номер лс</th>
+                                                <th>Собственник</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr  ng-repeat="addres in alladdres "> <!--| filter:AddFilter-->
+                                                <td>{{addres.street}}</td>
+                                                <td>{{addres.houseNumber}}</td>
+                                                <td>{{addres.flatNumber}}</td>
+                                                <td>{{addres.number}}</td>
+                                                <td>{{addres.nameOwner}}</td> 
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                               
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div>
+    </div>
+</div>

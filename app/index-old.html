@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link href="css/framework/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="css/framework/css/normalize.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="top-menu">
+	   <div class="top-menu-one">
+        <img class="logo" src="img/Voombat_Logo2.png" alt="альтернативный текст"/>
+		</div>
+	   <div class="top-menu-two">
+	   <form class="searchForm">
+        <input class="search-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+        <input class="search-submit" type="submit" value="Поиск">
+        <span class="icon-search"></span>
+    </form>
+
+	   </div>
+	   <div class="top-menu-three">
+	   <div class="user">
+	   <img class="icon-user" src="img/user-icon.png" alt="альтернативный текст"/><span class="user-text">Тест Тестович Тестов</span>
+	   </div>
+	   <div></div>
+	   </div>
+	  </div>
+    
+      <div class="left-menu">
+	  <button class="left-menu-button">Главная</button>
+	  <button class="left-menu-button">Дома</button>
+	  <button class="left-menu-button">Отчеты</button>
+	  <button class="left-menu-button">Услуги</button>
+	  <button class="left-menu-button">Настройки</button>
+	  </div>
+  <div class="main" ng-view></div>
+  <script src="js/angular.js"></script>
+  <script src="js/angular-resourse.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
